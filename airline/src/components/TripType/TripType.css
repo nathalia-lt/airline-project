@@ -1,0 +1,20 @@
+.trip-type-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #545454;
+}
+
+.trip-type-btn{
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+    border: 0;
+    font-weight: 600;
+}
+
+.trip-type-btn.active {
+    background-color:  var( --CTA-color);
+    color: white;
+} 

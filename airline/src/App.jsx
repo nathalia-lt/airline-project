@@ -1,18 +1,22 @@
 
 import './App.css'
 import Header from './components/Header/Header'
+import TripType from './components/TripType/TripType/'
+import Footer from './components/Footer/Footer'
+
+
+
 
 function App() {
-  const test = "a"
 
   return (
-    <>
       <div>
         <Header/>
-        <h1>Airline {test}</h1>
+        <div className="main-container">
+          <TripType/>
+        </div>
+        <Footer/>
       </div>
-
-    </>
   )
 }
 

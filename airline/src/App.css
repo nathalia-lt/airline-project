@@ -1,12 +1,15 @@
-
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
   --accent-color: #9C2E35;
+  font-family: 'Source Sans Pro Black', Verdana, sans-serif;
+  min-height: 100vh;
 }
 
-
-
+.main-container {
+  padding: 12px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
