@@ -1,0 +1,30 @@
+
+
+.field-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+.field-container label{
+    display: block;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 6px;
+} 
+
+.field-container input{
+    min-width: 200px;
+    padding-left: 0px;
+    border: 0;
+    font-size: 16px;
+}
+
+.input-wrapper{
+    width: 80%;
+    text-align: left;
+}
