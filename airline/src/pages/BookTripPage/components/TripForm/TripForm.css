@@ -28,3 +28,44 @@
     width: 80%;
     text-align: left;
 }
+
+.from-to-container{
+    display: flex;
+    justify-content: center;
+}
+
+.from-to-box{
+    padding: 30px 12px;
+
+}
+
+
+
+.fare-type-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #545454;
+}
+
+.fare-type-btn{
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+    border: 0;
+    font-weight: 600;
+}
+
+.fare-type-btn.active{
+    background-color:  var( --CTA-color);
+    color: white;
+}
+
+.search-btn{
+    padding: 16px 140px;
+    border-radius: 6px;
+    background-color: var(--CTA-color);
+    color: white;
+    font-size: 16px;
+}
