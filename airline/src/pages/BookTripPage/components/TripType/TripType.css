@@ -1,5 +1,6 @@
 .trip-type-container {
     display: flex;
+    width: 100%;
     justify-content: center;
     border-radius: 10px;
     overflow: hidden;

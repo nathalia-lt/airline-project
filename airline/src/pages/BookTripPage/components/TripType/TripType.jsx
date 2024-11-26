@@ -13,8 +13,15 @@ function TripType(){
 
     return (
         <div className="trip-type-container">
-            <button onClick={() => handleChangeTripType('round-trip')} className={`trip-type-btn ${selectedTripType == 'round-trip' ? 'active' : ''}`}>Round Trip</button>
-            <button onClick={() => handleChangeTripType('one-way')} className={`trip-type-btn ${selectedTripType == 'one-way' ? 'active' : ''}`}>One Way</button>
+            <button 
+                onClick={() => handleChangeTripType('round-trip')}         className={`trip-type-btn ${selectedTripType == 'round-trip' ? 'active' : ''}`}
+            >
+                Round Trip
+            </button>
+            <button 
+                onClick={() => handleChangeTripType('one-way')} 
+                className={`trip-type-btn ${selectedTripType == 'one-way' ? 'active' : ''}`}>One Way
+            </button>
         </div>
     )
 }

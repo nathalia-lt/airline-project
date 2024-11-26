@@ -1,20 +1,36 @@
+import { useState } from "react";
 import { MdMonetizationOn } from "react-icons/md";
 
+const fareTypes = [
+    {key: 'dollars', label: 'Dollars'},
+    {key: 'points', label: 'Points'},
+    {key: 'points_cash', label: 'Points + Cash'}
+]
+
 function ShowFares(){
+    //use state cria uma variavel 
+    const [selectedFareType, setSelectedFareType] = useState('dollars')
 
-    // const [selectedFareType, setSelectedFareType] = useState('Dollars')
-
-    // conta handleChangeFareType = (newFare) => {
-    //     setSelectedFareType(newFare)
-    // }
+    const handleChangeFareType = (newFare) => {
+        setSelectedFareType(newFare)
+    }
 
     return(
-
-        <div className="fare-type-container">
-            <button className="fare-type-btn">Dollars</button>
-            <button className="fare-type-btn">Points</button>
-            <button className="fare-type-btn">Points + Cash</button>
-        </div>
+        <>
+            <p>Show Fares in</p>
+            <div className="fare-type-container">
+                {fareTypes.map(fare => (
+                        <button
+                        key={fare.key}    
+                        onClick={() => handleChangeFareType(fare.key)} 
+                        className={`fare-type-btn ${selectedFareType == fare.key ? 'active' : ''}`}
+                        >
+                            {fare.label}
+                        </button>
+                    )
+                )}
+            </div>
+        </>
     )
 }
 

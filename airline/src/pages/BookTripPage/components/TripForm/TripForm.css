@@ -1,6 +1,23 @@
+.trip-form-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.trip-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
 
-.field-container{
+.field-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,37 +27,38 @@
     border-radius: 8px;
 }
 
-.field-container label{
+.field-container label {
     display: block;
     font-weight: 700;
     text-align: left;
     margin-bottom: 6px;
-} 
+}
 
-.field-container input{
+.field-container input {
     min-width: 200px;
     padding-left: 0px;
     border: 0;
     font-size: 16px;
 }
 
-.input-wrapper{
+.input-wrapper {
     width: 80%;
     text-align: left;
 }
 
-.from-to-container{
+.from-to-container {
     display: flex;
     justify-content: center;
 }
 
-.from-to-card{
+.from-to-card {
     padding: 20px 12px;
 
 }
 
 
-.fare-type-container{
+.fare-type-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     border-radius: 10px;
@@ -48,7 +66,7 @@
     border: 1px solid #545454;
 }
 
-.fare-type-btn{
+.fare-type-btn {
     background-color: white;
     padding: 10px;
     width: 50%;
@@ -56,15 +74,16 @@
     font-weight: 600;
 }
 
-.fare-type-btn.active{
-    background-color:  var( --CTA-color);
+.fare-type-btn.active {
+    background-color: var(--CTA-color);
     color: white;
 }
 
-.search-btn{
+.search-btn {
     padding: 16px 140px;
     border-radius: 6px;
     background-color: var(--CTA-color);
     color: white;
     font-size: 16px;
+    flex-grow: 3;
 }

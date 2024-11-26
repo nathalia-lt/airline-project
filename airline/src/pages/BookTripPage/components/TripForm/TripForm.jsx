@@ -1,3 +1,4 @@
+import TripType from '../TripType/TripType'
 import FromTo from './FromTo'
 import Dates from './Dates'
 import Travelers from './Travelers'
@@ -9,14 +10,15 @@ function TripForm(){
 
 
     return(
-        <div>
-            {/* 
-                */}
+        <div className='trip-form-wrapper'>
+            <div className='trip-form-container'>
+                <TripType/>
                 <FromTo/>
                 <Dates/>
                 <Travelers/>                
                 <PromoCode/>
                 <ShowFares/>
+            </div>
             <button className='search-btn'>Search</button>
         </div>
     )
