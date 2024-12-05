@@ -1,26 +1,27 @@
-import {useState} from 'react'
 import './TripType.css'
 
-function TripType(){
+//esta recebendo informacoes da mae.
+//a letra minuscula signigfica que é a variavel
+function TripType({setTripType, tripType}) {
     // const [variavel, metodo que altera o valor da variavel]
-    const [selectedTripType, setSelectedTripType] = useState('round-trip')
+    
 
     const handleChangeTripType = (newType) => {
         //set é usado para trocar o valor da variavel
-        setSelectedTripType(newType)
+        setTripType(newType)
     }
 
 
     return (
         <div className="trip-type-container">
             <button 
-                onClick={() => handleChangeTripType('round-trip')}         className={`trip-type-btn ${selectedTripType == 'round-trip' ? 'active' : ''}`}
+                onClick={() => handleChangeTripType('round-trip')}         className={`trip-type-btn ${tripType == 'round-trip' ? 'active' : ''}`}
             >
                 Round Trip
             </button>
             <button 
                 onClick={() => handleChangeTripType('one-way')} 
-                className={`trip-type-btn ${selectedTripType == 'one-way' ? 'active' : ''}`}>One Way
+                className={`trip-type-btn ${tripType == 'one-way' ? 'active' : ''}`}>One Way
             </button>
         </div>
     )

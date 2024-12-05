@@ -87,3 +87,27 @@
     font-size: 16px;
     flex-grow: 3;
 }
+
+/* calendar */
+
+.react-datepicker__month-container {
+    float: none;
+
+}
+
+.react-datepicker__triangle {
+    display: none;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
