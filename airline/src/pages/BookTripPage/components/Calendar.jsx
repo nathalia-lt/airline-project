@@ -1,11 +1,8 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useState } from "react";
 
-function Calendar({ tripType }) {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(null);
-  console.log(tripType);
+
+function Calendar({ tripType, startDate, setStartDate, endDate, setEndDate }) {
 
   const onChange = dateOrdates => {
     if (tripType === "one-way") {
@@ -15,7 +12,7 @@ function Calendar({ tripType }) {
       setEndDate(dateOrdates[1]);
     }
   }
- 
+
 
   if (tripType === "one-way") {
     return (

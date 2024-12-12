@@ -13,14 +13,17 @@ import {useState} from 'react'
 //vamos passar os states para os componentes filhos, para eles poderem reagir ou alterar o status
 function TripForm(){
     //eu mudei o tripTYpe pra ca, para ele poder controlar o TripType componente
+    //passei esse estado para o triptype, como propriedade do triptype (round-tripo)
     const [tripType, setTripType] = useState('round-trip')
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(null);
 
     return(
         <div className='trip-form-wrapper'>
             <div className='trip-form-container'>
                 <TripType setTripType={setTripType} tripType={tripType}/>
                 <FromTo />
-                <Dates tripType={tripType}/>
+                <Dates tripType={tripType} setStartDate={setStartDate} startDate={startDate} setEndDate={setEndDate} endDate={endDate}/>
                 <Travelers/>                
                 <PromoCode/>
                 <ShowFares/>
